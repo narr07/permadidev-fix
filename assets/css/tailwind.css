@@ -1,0 +1,32 @@
+@import "./fonts.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  html {
+    @apply text-[18px] sm:text-[20px] scroll-smooth;
+  }
+  body {
+    @apply font-body bg-permadi-50 dark:bg-permadi-950;
+  }
+  p{
+    @apply text-slate-800 dark:text-slate-200;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-title font-black tracking-wide  text-permadi-950 dark:text-kuning;
+  }
+}
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.3s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
