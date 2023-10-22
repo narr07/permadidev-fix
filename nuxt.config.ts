@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "@nuxtjs/fontaine",
     "@nuxt/image",
+    '@nuxthq/studio',
     "@twicpics/components/nuxt3",
   ],
   anime: {

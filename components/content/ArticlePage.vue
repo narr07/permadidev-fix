@@ -36,13 +36,11 @@
       <NuxtLink :to="article._path" class="headline">
         <UCard data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <NuxtImg
-            provider="twicpics"
             :src="article.image"
             height="300"
             width="600"
-            class="bg-cover object-cover rounded-md object-center"
+            class="bg-cover h-40 md:h-64 w-full object-cover rounded-md object-center"
             format="webp" />
-          <TwicImg :src="article.image" />
           <h1>
             {{ article.title }}
           </h1>
