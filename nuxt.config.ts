@@ -9,9 +9,15 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "@nuxtjs/fontaine",
     "@nuxt/image",
+    "@twicpics/components/nuxt3",
   ],
   anime: {
     composables: true,
+  },
+  image: {
+    twicpics: {
+      baseURL: "https://permazix.twic.pics",
+    },
   },
   twicpics: {
     domain: "https://permazix.twic.pics",
