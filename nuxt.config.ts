@@ -6,9 +6,9 @@ export default defineNuxtConfig({
     "@hypernym/nuxt-anime",
     "@nuxt/content",
     "@twicpics/components/nuxt3",
-    '@nuxtjs/google-fonts',
-    '@nuxtjs/fontaine',
-    '@nuxt/image',
+    "@nuxtjs/google-fonts",
+    "@nuxtjs/fontaine",
+    "@nuxt/image",
   ],
   anime: {
     composables: true,
@@ -18,13 +18,13 @@ export default defineNuxtConfig({
     anticipation: 0.5,
     step: 50,
   },
-  // ui: {
-  //   safelistColors: ['slate']
-  // },
+  ui: {
+    icons: ["ph", "skill-icons"],
+  },
   colorMode: {
     preference: "dark",
   },
-  css: ['~/assets/css/fonts.css'],
+  css: ["~/assets/css/fonts.css"],
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",
   },
@@ -38,7 +38,7 @@ export default defineNuxtConfig({
         wght: [400, 500, 600, 700, 800, 900],
         ital: [400, 500, 600, 700, 800, 900],
       },
-      "Geologica": {
+      Geologica: {
         wght: [100, 200, 300, 400, 500, 600, 700, 800, 900],
       },
     },
@@ -49,13 +49,13 @@ export default defineNuxtConfig({
         family: "Schibsted Grotesk",
         fallbacks: ["Schibsted Grotesk"],
         fallbackName: "Schibsted Grotesk",
-        root: 'assets',
+        root: "assets",
       },
       {
         family: "Geologica",
         fallbacks: ["Geologica"],
         fallbackName: "Geologica",
-        root: 'assets',
+        root: "assets",
       },
     ],
   },

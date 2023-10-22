@@ -34,13 +34,13 @@
 </script>
 <template>
   <UContainer>
-    <UTabs
-      v-model="selected"
-      :items="items"
-      >
+    <UTabs v-model="selected" :items="items">
       <!-- pendidikan -->
       <template #pendidikan="{ item }">
-        <div class="px-6 bg-gray-100 shadow dark:bg-gray-900 py-2 rounded-md">
+        <UCard
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          class="px-6 bg-gray-100 shadow dark:bg-gray-900 py-2 rounded-md">
           <div class="w-full flex flex-col md:flex-row">
             <div class="w-full md:w-1/2 items-center justify-center flex">
               <SvgGuru />
@@ -53,11 +53,14 @@
               mencapai potensi penuh mereka.
             </div>
           </div>
-        </div>
+        </UCard>
       </template>
       <!-- teknologi -->
       <template #teknologi="{ item }">
-        <div class="px-6 bg-gray-100 shadow dark:bg-gray-900 py-2 rounded-md">
+        <UCard
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          class="px-6 bg-gray-100 shadow dark:bg-gray-900 py-2 rounded-md">
           <div class="w-full flex flex-col md:flex-row">
             <div class="w-full md:w-1/2 items-center justify-center flex">
               <SvgProgrammer />
@@ -70,11 +73,14 @@
               teknologi terbaru.
             </div>
           </div>
-        </div>
+        </UCard>
       </template>
       <!-- seni -->
       <template #seni="{ item }">
-        <div class="px-6 bg-gray-100 shadow dark:bg-gray-900 py-2 rounded-md">
+        <UCard
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          class="px-6 bg-gray-100 shadow dark:bg-gray-900 py-2 rounded-md">
           <div class="w-full flex flex-col md:flex-row">
             <div class="w-full md:w-1/2 items-center justify-center flex">
               <SvgDesigner />
@@ -86,7 +92,7 @@
               selalu berusaha untuk menciptakan karya yang kreatif dan menarik.
             </div>
           </div>
-        </div>
+        </UCard>
       </template>
     </UTabs>
   </UContainer>
