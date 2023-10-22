@@ -9,7 +9,6 @@
               <ul class="flex space-x-2">
                 <li v-for="link of navigation" :key="link._path">
                   <UButton
-                    padded="xl"
                     :variant="link._path === $route.path ? 'solid' : 'ghost'"
                     :to="link._path">
                     {{ link.title }}

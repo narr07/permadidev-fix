@@ -18,7 +18,7 @@
   h4,
   h5,
   h6 {
-    @apply font-title font-black tracking-wide  text-permadi-950 dark:text-kuning;
+    @apply font-title font-black   text-permadi-800 dark:text-kuning;
   }
 }
 .page-enter-active,
