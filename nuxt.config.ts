@@ -66,16 +66,6 @@ export default defineNuxtConfig({
       },
     ],
   },
-   content: {
-    documentDriven: true,
-    highlight: {
-      theme: {
-        default: 'github-light',
-        dark: 'github-dark'
-      },
-      preload: ['json', 'js', 'ts', 'html', 'css', 'vue', 'diff', 'shell', 'markdown', 'yaml', 'bash', 'ini', 'c', 'cpp']
-    }
-  },
   nitro: {
     prerender: {
       crawlLinks: true,
@@ -84,5 +74,15 @@ export default defineNuxtConfig({
       //   "/__pinceau_tokens_schema.json",
       // ],
     },
+  },
+  routeRules: {
+    // Homepage pre-rendered at build time
+    "/": { prerender: true },
+    "/galeri": { prerender: true },
+    // Product page generated on-demand, revalidates in background
+    "/articles/**": { swr: 360 },
+    // Blog post generated on-demand once until next deploy
+    "/api/**": { cors: true },
+    // Redirects legacy urls
   },
 });
