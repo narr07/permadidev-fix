@@ -3,11 +3,11 @@ import { withTrailingSlash } from 'ufo'
 const props = defineProps({
   path: {
     type: String,
-    default: 'articles'
-  }
-})
+    default: 'blogs',
+  },
+});
 // @ts-ignore
-const { data: _articles } = await useAsyncData('articles', async () => await queryContent(withTrailingSlash(props.path)).sort({ date: -1 }).find())
+const { data: _articles } = await useAsyncData('blogs', async () => await queryContent(withTrailingSlash(props.path)).sort({ date: -1 }).find())
 const articles = computed(() => _articles.value || [])
 </script>
 <template>

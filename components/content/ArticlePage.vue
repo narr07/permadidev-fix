@@ -1,5 +1,4 @@
 <script setup lang="ts">
-  import { useContentPreview } from "#imports";
   type Article = {
     _path: string;
     title: string;

@@ -59,9 +59,9 @@ export default defineNuxtConfig({
         root: "assets",
       },
       {
-        family: "Geologica",
-        fallbacks: ["Inter"],
-        fallbackName: "Inter",
+        family: "Inter",
+        fallbacks: ["Geologica"],
+        fallbackName: "Geologica",
         root: "assets",
       },
     ],
