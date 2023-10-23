@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "@nuxtjs/fontaine",
     "@nuxt/image",
-    '@nuxthq/studio',
+    "@nuxthq/studio",
     "@twicpics/components/nuxt3",
   ],
   anime: {
@@ -60,10 +60,29 @@ export default defineNuxtConfig({
       },
       {
         family: "Geologica",
-        fallbacks: ["Geologica"],
-        fallbackName: "Geologica",
+        fallbacks: ["Inter"],
+        fallbackName: "Inter",
         root: "assets",
       },
     ],
+  },
+   content: {
+    documentDriven: true,
+    highlight: {
+      theme: {
+        default: 'github-light',
+        dark: 'github-dark'
+      },
+      preload: ['json', 'js', 'ts', 'html', 'css', 'vue', 'diff', 'shell', 'markdown', 'yaml', 'bash', 'ini', 'c', 'cpp']
+    }
+  },
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      // ignore: [
+      //   "/__pinceau_tokens_config.json",
+      //   "/__pinceau_tokens_schema.json",
+      // ],
+    },
   },
 });
